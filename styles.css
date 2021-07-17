@@ -1,0 +1,108 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.section-container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-section-one{
+    background-image: url(./assets/background.jpg);    
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.background-section-two{
+    background-image: url(./assets/background2.jpg);    
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card{
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 25px;
+    max-width: 500px;  
+
+}
+
+#products{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    margin: 40px;
+    
+    
+}
+.product{
+    width: 40vw;
+    height: 30vh;
+    padding: 10px;
+    margin: 5vh;
+    
+}
+.product:hover{
+    transform: scale(1.2)
+}
+#million img, #jadore img, #ch img{
+    width: 40%;
+    
+    
+}
+.million{      
+    left: 100px;
+    top: 100px;
+}
+
+form{
+    display: grid;
+}
+
+input{
+    width: 250px;
+    height: 30px;
+    margin-top: 10px;
+    text-align: center;
+    border-radius:5px;
+    background: #fff;
+    color:#000;
+}
+
+.spinner {
+    border: 8px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #22a6b3;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes rotate {
+    to { 
+        transform: rotate(360deg); 
+    }
+}
+
+footer{
+    height: 150px;
+    padding: 25px;
+    text-align: center;
+    background-color:#000;
+    color:#fff;
+}
+
+
+
