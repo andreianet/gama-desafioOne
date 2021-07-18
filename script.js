@@ -13,13 +13,23 @@ form.addEventListener('submit', (e) => {
     localStorage.setItem('lead', data)
 
     //loader
+    //var button;
     let content = document.getElementById('content');
-    let spinner = document.createElement('spinner')//`<p>carregando...<\p>`
-    let pronto = `<p>pronto</>`
+    let spinner = `<p>carregando...<\p>`
+    let pronto = `<p>Cadastro Feito!</>`
     content.innerHTML = spinner;
+    spinner = spinner.firstChild    
+
     setTimeout(() =>{
         content.innerHTML = pronto
     }, 1000)
 
     //console.log(name, email)
 })
+
+function onClickMenu(){
+    document.getElementById("menu").classList.toggle("change");
+    document.getElementById("nav").classList.toggle("change");
+    document.getElementById("menu-bg").classList.toggle("change-bg");
+
+}
